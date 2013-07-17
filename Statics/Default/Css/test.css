@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: top; }
+ul, li { list-style-type: none; }
+body, input, select, button, textarea { font-size: 12px; font-family: Tahoma, Geneva, sans-serif; }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+body { background: #fff; font:12px/1.8  "宋体","微软雅黑", Arial; color: #333; }
+a, a:link { color: #333; text-decoration: none;}
+a:visited {  }
+a:active, a:hover { text-decoration: underline; }
+a:focus { outline: none; }
+ 
+.cFloat:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.cFloat { display: block; min-height: 1%; }
+*html .cFloat { height: 1%; }
+.clear { diplay: block!important; float: none!important; clear: both; overflow: hidden; width: auto!important; height: 0!important; margin: 0 auto!important; padding: 0!important; font-size: 0; line-height: 0; }
+.more { float: right; }
+.more a { font-weight: normal; font-size: 12px; }
+.fl, .fr { display: inline; float: left; }
+.fr { float: right;}
+.red { color:#c31e2f;}
+.border-left { border-left:1px solid #ccc;}
+.border-right { border-right:1px solid #ccc;}
+.row2 { width:50%; margin-left:-1px;}
+.row2.first { margin-left:-1px;}
+/****************/
+
+.wrapper { background:#fcfcfc; padding-left:49px;}
+.content { border-left:1px solid #f3f3f3; background:#fff; padding:32px;}
+
+.aimee-box { border-top:2px solid #000; padding:15px 0 20px 0; clear:both;font-family:Arial;}
+
+.maniNav { height:23px; line-height:23px; margin:15px 0 20px; float:left;}
+.maniNav li { float:left;}
+.maniNav li a { display:block; background:#000; color:#fff; padding:0 15px; margin-right:2px; border:1px solid #000; text-decoration:none;}
+.maniNav li a:hover { background:#333;}
+
+.header-msg { line-height:23px; float:left; margin:16px 0 0 15px;}
+
+.img-list { overflow:hidden;}
+.img-list li { float:left; width:175px; padding:0 15px; border-left:1px solid #ccc; margin-left:-15px; margin-right:15px;}
+.img-list li p { margin-top:15px;}
+
+.text-list { padding-right:50px;}
+.text-list h3 { border-bottom:1px solid #ccc; padding-bottom:10px;}
+.text-list li { line-height:32px; background:url(../Images/point_1x2.gif) repeat-x left bottom; overflow: hidden;}
+.text-list li a { float:left;}
+.text-list li span.time { float:right;}
+
+.text-field { padding:30px 50px;}
+
+.photo-text { overflow:hidden;}
+.photo-text li { float:left; width:440px; border-left:1px solid #ccc; margin-left:-15px; padding:0 15px;}
+.photo-text li .lc { width:175px; margin-right:15px;}
+.photo-text li .rc { width:250px;}
+
+/************/
+.pages { overflow:hidden; padding:18px 0 8px;font-family:Arial;float:left; margin:0 3px; cursor:pointer;}
+span.current { cursor: default; color:#FFF;background:#000;padding:2px 6px;}
+/************/
+
+.text-content { font-size:14px; padding-bottom:20px;}
+.text-content h3 { font-size:32px;}
+.text-content p { text-indent:2em; margin:1em 0;}
+.text-messages p{text-indent:2em;margin:1em 0;
+}
+.messages-input{
+	width:150px;
+	height:22px;
+	border:#000 solid 1px;}
+.messages-con{
+	width:250px;
+	height:100px;
+	border:#000 solid 1px;
+	
+	}	
+.messages-b{
+	width:70px;
+	height:22px;
+	background:#000;
+	color:#FFF;
+	margin:20px 0 0 30px;
+	border:none;
+	display:block;}	

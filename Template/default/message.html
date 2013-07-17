@@ -1,0 +1,80 @@
+<include file="default:header" />
+
+<body>
+<div class="wrapper">
+  <div class="content"> 
+    <!--头部开始-->
+    <div class="header">
+      <h1><a href="[!ROOT]"><img src="[!IMG]logo.jpg" alt="logo" /></a></h1>
+      <!--头部导航-->
+      <ul class="maniNav">
+        <menu id="rs" lim="10" >
+          <li><a href="{$rs.url}">{$rs.title} </a></li>
+        </menu>
+      </ul>
+      <!--头部导航结束--> 
+      <span class="header-msg">Beta0.0.1A 测试专用模板</span> </div>
+    <!--头部结束--> 
+    <!--中间开始-->
+    <div class="aimee-box cFloat"> </div>
+    <!--end aimee-box--> 
+    <!--文章内容开始-->
+    
+  
+         <div class="text-messages">
+     
+ 
+        
+        
+    
+<form name="proform" method="post" action="__URL__/message">
+        
+        <p>类型 
+          <select name="types" class="messages-input">
+						<option value="0" selected="selected">&nbsp;留言&nbsp;</option>
+						<option value="1">&nbsp;建议&nbsp;</option>
+						<option value="2">&nbsp;投诉&nbsp;</option>
+						<option value="3">&nbsp;合作&nbsp;</option>
+					</select> </p>
+        
+ <p>标题 
+   <input type="text" name="name" value="" class="messages-input" /></p>
+ <p>邮箱 
+   <input type="text" name="email" value="" class="messages-input" /></p>
+ <p>内容 
+   <textarea name="content" cols="50" rows="20" class="messages-con"></textarea></p>
+ <p>电话 
+   <input type="text" name="phone" value="" class="messages-input" /></p>
+ <p>QiCQ 
+   <input type="text" name="qq" value="" class="messages-input" /></p>
+ <P><input type="submit" value="提交" class="messages-b"  name="submit" /></P>
+		
+		</form>
+	</div>
+	<div class="clear"></div>
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+ 
+    </div>
+    
+    <!--文章内容结束--> 
+    <!--中间结束--> 
+    <!--底部开始--> 
+           <include file="default:foother" /><!--底部结束--> 
+  </div>
+
+</body>
+</html>

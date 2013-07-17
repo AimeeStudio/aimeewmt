@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header,.refresh_code,.aimee_login .well .input-small { background-image:url(../Images/admin_login_bg.png);}
+.header { height:338px; background-position:left top; }
+.login_logo { padding-top:64px; text-align:center;}
+
+.aimee_login {  text-align:center; margin-top:67px;}
+
+.login_input { margin-top:50px; clear:both; margin-bottom:25px;}
+.login_input .btn { margin:0 8px; padding-left:24px; padding-right:24px;}
+
+.username,.password,.verification,.ver_code_pop,.ver_code_pop span { background:url(../Images/admin_login_input.png) no-repeat left top;}
+.username,.password,.verification { width:185px; height:24px;  border:none; text-indent:32px; margin-left:3px; margin-right:3px;}
+.password { background-position:0 -32px;}
+.verification { background-position:0 -64px;}
+
+.login_input_box { width:600px; height:32px; margin:0 auto;}
+.login_input_box input { float:left;}
+.ver_code { position: relative; float:left;}
+.ver_code_pop { width:123px; height:32px; line-height:28px; vertical-align:middle; background-position:0 -96px; color:#fff; position:absolute; right:0; top:-35px;}
+.ver_code_pop span { width:11px; height:11px; position:absolute; right: 10px; top:8px; background-position:-133px -104px; cursor:pointer;}
+
+.modal h3,.modal p { font-size:12px;}
+.str { color:#b94a48;}
+.tx_mid { text-align:center;}
+
+.fast_track { margin-bottom:-4px;}
+.fast_track_nav {width:169px; margin:0 auto;}
+.aimee_blue,.aimee_orange,.aimee_red { height:4px; float:left; position:relative;}
+.aimee_blue { background:#1a7bc1; width:60px;}
+.aimee_orange { background:#e49317; width:54px;}
+.aimee_red { background:#e4253e; width:55px;}
+.aimee_blue span,.aimee_orange span,.aimee_red span { position:absolute; top:-26px; width:54px; margin:0 auto; height:26px; color:#fff; cursor:pointer;text-align:center;}
+
+.fast_track_plan { clear:both; text-align:center;}
+.fast_track_plan div { padding-top:44px;}
+.fast_track_plan input { margin:0 10px;}

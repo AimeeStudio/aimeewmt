@@ -1,0 +1,86 @@
+<include file="default:header" />
+
+<body>
+<div class="wrapper">
+  <div class="content"> 
+    <!--头部开始-->
+    <div class="header">
+      <h1><a href="[!ROOT]"><img src="[!IMG]logo.jpg" alt="logo" /></a></h1>
+      
+      <!--头部导航-->
+      <ul class="maniNav">
+        <menu id="rs" lim="10" >
+          <li><a href="{$rs.url}">{$rs.title} </a></li>
+        </menu>
+      </ul>
+      <!--头部导航结束--> 
+      
+      <span class="header-msg">Beta0.0.1A 测试专用模板</span> </div>
+    <!--头部结束--> 
+    <!--中间开始-->
+    <div class="aimee-box">
+      <ul class="img-list">
+        <list id="rs" fid="3" lim="4" >
+          <li> <a href="{$rs.url}"><img src="{$rs.img}"></a>
+            <p><a href="{$rs.url}">{$rs.title}</a></p>
+          </li>
+        </list>
+      </ul>
+    </div>
+    <!--end aimee-box-->
+    <div class="aimee-box cFloat">
+      <div class="row2 border-right fl"> 
+        <!--文章列表开始-->
+        <div class="text-list">
+          <h3>列表文章</h3>
+          <ul>
+            <list id="rs" fid="2" lim="5" ord="2">
+              <li><a href="{$rs.url}">{$rs.title}</a><span class="time">{$rs.time|date="Y年m月d日",###}</span></li>
+            </list>
+          </ul>
+        </div>
+        <!--文章列表结束--> 
+      </div>
+      <div class="row2 border-left fl">
+        <div class="text-field">
+          <p>调用网站名称：{$ai.sitename}</p>
+          <p>调用关键字：{$ai.keywords}</p>
+          <p>调用网站描述：{$ai.description}</p>
+          <p>调用版权：{$ai.siteright}</p>
+          <p>调用ICP：{$ai.icp}</p>
+          <p>调用管理员邮箱：{$ai.mail}</p>
+          <p>调用网站网址：{$ai.domain}</p>
+        </div>
+      </div>
+    </div>
+    <!--end aimee-box-->
+    <div class="aimee-box">
+      <ul class="photo-text">
+        <li>
+          <h3><a href="#">TAG关键字</a></h3>
+          <p>
+            <tag fid="2" lim="10"> <a href="{$rs.url}" target="_blank">{$rs.title}</a> </br>
+            </tag>
+            <tag fid="3" lim="10"> <a href="{$rs.url}" target="_blank">{$rs.title}</a> </br>
+            </tag>
+          </p>
+        </li>
+        <view id="rs" cid="5">
+          <li>
+            <div class="lc fl"><a href="#"><img src="{$rs.img}" alt="{$rs.title}" /></a></div>
+            <div class="rc fr">
+              <h3><a href="{$rs.url}">{$rs.title}</a></h3>
+              <p>{$rs.sum}<a href="{$rs.url}">详情&gt;&gt;</a></p>
+            </div>
+          </li>
+        </view>
+      </ul>
+    </div>
+    <!--end aimee-box--> 
+    <!--中间结束--> 
+    <!--底部开始--> 
+    <include file="default:foother" /> <!--底部结束--> 
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<include file="default:header" />
+
+<body>
+<div class="wrapper">
+  <div class="content"> 
+    <!--头部开始-->
+    <div class="header">
+      <h1><a href="[!ROOT]"><img src="[!IMG]logo.jpg" alt="logo" /></a></h1>
+      <!--头部导航-->
+      <ul class="maniNav">
+        <li><a href="[!ROOT]">首页</a></li>
+        <menu id="rs" lim="10" >
+          <eq name="rs.id" value="4">
+            <li><a href="{$rs.url}">{$rs.title} </a></li>
+          </eq>
+        </menu>
+        <li><a href="#">时间：<?php echo date("Y-m-d H:i:s"); ?></a></li>
+      </ul>
+      <!--头部导航结束--> 
+      <span class="header-msg">Beta0.0.1A 测试专用模板</span> </div>
+    <!--头部结束--> 
+    <!--中间开始-->
+    <opage id="rs" fid='$fid'>
+      <div class="aimee-box cFloat">
+        <p>{$rs.title}</p>
+        <p>{$rs.content}</p>
+      </div>
+    </opage>
+    <!--中间结束--> 
+    <!--底部开始--> 
+    <include file="default:foother" /><!--底部结束--> 
+  </div>
+</div>
+</body>
+</html>

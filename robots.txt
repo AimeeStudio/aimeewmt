@@ -1,0 +1,13 @@
+#
+# robots.txt for AimeeWMT
+#
+
+User-agent: *
+Disallow: /Admin/
+Disallow: /Data/
+Disallow: /Source/
+Disallow: /Install/
+Disallow: /Template/
+Disallow: /Static/
+Disallow: /Backup/
+Disallow: /Upload/

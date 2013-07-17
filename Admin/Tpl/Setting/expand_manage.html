@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+<style type="text/css">
+body,td,th {
+	font-family: Arial, SimSun, "Helvetica Neue", Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<body>
+      <div class="content">
+        <div class="page-header">
+          <h3 class="fl">管理扩展</h3>
+          <div class="user_message fr"><a href="expand_installation.html"><i class="icon-s-cog"></i>安装我的扩展</a></div>
+          <div class="cl"></div>
+        </div>
+        <div class="minbox">
+        	<table class="table table-bordered table-striped">
+            	<thead>
+                	<tr>
+                    	<th width="5%" class="table-textcenter">
+                        <input name="" type="checkbox" value="">
+                      </th>
+                        <th width="18%">插件</th>
+                        <th>描述</th>
+                        <th width="20%">配置</th>
+                  </tr>
+                </thead>
+                <tbody>
+            		<tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td>统计代码插件</td>
+                        <td>用来显示设备号码，此组件功能限中国大陆使用</td>
+                        <td class="table_config"><a href="#" class="open">启用</a><a href="expand_editor.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                    <tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td>分类导航</td>
+                        <td>用来显示设备号码，此组件功能限中国大陆使用</td>
+                        <td class="table_config"><a href="#">启用</a><a href="expand_editor2.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                    <tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td>欢迎使用</td>
+                        <td>用来显示设备号码，此组件功能限中国大陆使用</td>
+                        <td class="table_config"><a href="#" class="open">启用</a><a href="expand_hello.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                    <tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td>基本设置 icp组件</td>
+                        <td>用来显示设备号码，此组件功能限中国大陆使用</td>
+                        <td class="table_config"><a href="#">启用</a><a href="expand_editor2.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                    <tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td>基本设置 icp组件</td>
+                        <td>用来显示设备号码，此组件功能限中国大陆使用</td>
+                        <td class="table_config"><a href="#">启用</a><a href="expand_editor.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                    <tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td>基本设置 icp组件</td>
+                        <td>用来显示设备号码，此组件功能限中国大陆使用</td>
+                        <td class="table_config"><a href="#">启用</a><a href="expand_editor2.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                </tbody>
+            </table>
+            <div class="batch_edit">
+            <span><input name="" type="checkbox" value=""></span>
+            <select class="input-small" name="">
+            	<option>批量设置</option>
+                <option>批量启用</option>
+                <option>批量禁用</option>
+                <option>批量删除</option>
+            </select>
+            </div>
+             <div class="pagination-i">
+                {$page}
+            </div>
+        </div>
+        <div class="copyright"></div></div>
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

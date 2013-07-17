@@ -1,0 +1,84 @@
+<script type="text/javascript">
+function right_load(url) {
+	alert(url);
+	$("#right").load(url);
+}
+</script>
+
+    <h1 class="logo"><a href="{:U('Index/home')}" title="Aimee Admin" target="myframe">Aimee Admin</a></h1>
+    <div class="mainnav">
+      <ul class="unstyled">
+       
+      </ul>
+ </div>
+    <!--end mainnav-->
+<div class="user_info">
+      <ul class="nav nav-pills pull-right">
+        <li class="dropdown" id="menu1"> <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1"> <i class="icon-user"></i> {$Think.lang.admin_user}{$Think.session.adminname} <b class="caret"></b> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">{$Think.lang.admin_home}</a></li>
+            <li><a href="#myModa2" role="button" data-toggle="modal">{$Think.lang.admin_password}</a></li>
+            <li><a href="{:U('Public/delete_cache')}">{$Think.lang.web_cache}</a></li>
+            <li class="divider"></li>
+            <li><a href="{:U('Public/logout')}">{$Think.lang.exit}</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--修改密码开始-->
+    
+    
+<div class="modal hide" id="myModa2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">修改密码</h3>
+  </div>
+  <div class="modal-body">
+  	<div class="change_password">
+    	<table width="100%">
+        	<tr>
+            	<td width="33%" align="right"><span class="cName">输入原密码</span></td>
+                <td width="67%"><input class="span3" name="" type="text" /></td>
+            </tr>
+            <tr>
+            	<td align="right"><span class="cName">输入新密码</span></td>
+                <td><input class="span3" name="" type="text" /></td>
+            </tr>
+            <tr>
+            	<td align="right"><span class="cName">确认新密码</span></td>
+                <td><input class="span3" name="" type="text" /></td>
+            </tr>
+        </table>
+    </div>
+  </div>
+    <div class="modal-footer">
+    <button class="btn btn-primary">修改</button>
+  </div>
+</div>
+
+            <!--修改密码结束-->

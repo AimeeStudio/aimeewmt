@@ -1,0 +1,46 @@
+<include file="default:header" />
+
+<body>
+<div class="wrapper">
+  <div class="content"> 
+    <!--头部开始-->
+    <div class="header">
+      <h1><a href="[!ROOT]"><img src="[!IMG]logo.jpg" alt="logo" /></a></h1>
+      <!--头部导航-->
+      <ul class="maniNav">
+   
+         <menu id="rs" lim="10" >
+          <li><a href="{$rs.url}">{$rs.title} </a></li>
+        </menu>
+    
+        
+        
+        
+      </ul>
+      <!--头部导航结束--> 
+      <span class="header-msg">Beta0.0.1A 测试专用模板</span> </div>
+    <!--头部结束--> 
+    <!--中间开始-->
+    <div class="aimee-box cFloat"> 
+      <!--文章列表开始-->
+      <div class="text-list">
+        <h3>分类标题</h3>
+        <ul>
+          <list id="rs" fid="$fid" lim="10" page="$page" pagetype="3" ord="2">
+            <li> <a href="{$rs.url}">{$rs.id}.{$rs.title}</a> <span class="time">{$rs.time|date="Y年m月d日",###}</span> </li>
+          </list>
+        </ul>
+      </div>
+      <!--文章列表结束--> 
+      <!--页码开始-->
+      <div class="pages"> {$page} </div>
+      <!--页码结束--> 
+    </div>
+    <!--end aimee-box--> 
+    <!--中间结束--> 
+    <!--底部开始--> 
+    <include file="default:foother" /><!--底部结束--> 
+  </div>
+</div>
+</body>
+</html>

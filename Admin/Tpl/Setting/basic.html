@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__ADMIN__/Admin/Js/jshack.js"></script>
+<link href="__ADMIN__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ADMIN__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+</head>
+<body>
+
+<form name="form1" id="form1" action="__SELF__" method="post">
+<input type="hidden" name="item" value="{$item}">
+<div class="content">
+        <div class="page-header">
+          <h3 class="fl">{$Think.lang.basic_configuration}</h3>  
+          <div class="user_message fr"><i class="icon-wrench"></i>{$Think.lang.configuring_site}</div>
+          <div class="cl"></div>
+        </div>
+        <table class="table set_table">
+          <thead>
+            <tr>
+              <th width="11%" >{$Think.lang.function}</th>
+              <th >{$Think.lang.configuration}</th>
+              <th width="61%" class="" >&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{$Think.lang.web_sitename}</td>
+              <td><input name="ai[sitename]" type="text" class="span5" value="{$ai.sitename}"></td>
+              <td class="">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>{$Think.lang.web_keywords}</td>
+              <td><input name="ai[keywords]" type="text" class="span5" value="{$ai.keywords}"></td>
+              <td class="">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>{$Think.lang.web_description}</td>
+              <td><textarea class="input-xlarge span5" name="ai[description]" cols="" rows="8">{$ai.description}</textarea></td>
+              <td class="">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>{$Think.lang.copyright}</td>
+              <td><input name="ai[siteright]" type="text" class="span5" value="{$ai.siteright}"></td>
+              <td class="">&nbsp;</td>
+            </tr>
+            <tr class="">
+              <td>{$Think.lang.icp}</td>
+              <td><input name="ai[icp]" type="text" class="span5" value="{$ai.icp}"></td>
+              <td class="">&nbsp;</td>
+            </tr>
+            <tr class="">
+              <td>{$Think.lang.admin_email}</td>
+              <td><input name="ai[mail]" type="text" class="span5" value="{$ai.mail}"></td>
+              <td class="">&nbsp;</td>
+            </tr>
+            <tr class="">
+              <td>{$Think.lang.webadd}</td>
+              <td><input name="ai[domain]" type="text" class="span5" value="{$ai.domain}"></td>
+              <td class="">&nbsp;</td>
+            </tr>
+            <tr class="">
+              <td>{$Think.lang.world_time}</td>
+              <td><select class="span5" name="ai[timezone]">
+               <option value = '-8' <eq name="ai.timezone" value="-8">selected="selected"</eq> >伦敦</option>
+              <option value = '-7' <eq name="ai.timezone" value="-7">selected="selected"</eq> >巴黎</option>
+              <option value = '-6' <eq name="ai.timezone" value="-6">selected="selected"</eq> >雅典</option>
+              <option value = '-5' <eq name="ai.timezone" value="-5">selected="selected"</eq> >莫斯科</option>
+               <option value = '-4' <eq name="ai.timezone" value="-4">selected="selected"</eq> >阿布扎比</option>
+                  <option value = '-3' <eq name="ai.timezone" value="-3">selected="selected"</eq> >伊斯兰堡</option>
+                  <option value = '-2' <eq name="ai.timezone" value="-2">selected="selected"</eq> >孟达卡</option>
+                  <option value = '-1' <eq name="ai.timezone" value="-1">selected="selected"</eq> >曼谷</option>
+                  <option value = '0' <eq name="ai.timezone" value="0">selected="selected"</eq> >北京</option>
+                  <option value = '1' <eq name="ai.timezone" value="1">selected="selected"</eq> >东京</option>
+                  <option value = '2' <eq name="ai.timezone" value="2">selected="selected"</eq> >墨尔本</option>
+                   <option value = '3' <eq name="ai.timezone" value="3">selected="selected"</eq> >惠灵顿</option>
+                  <option value = '4' <eq name="ai.timezone" value="4">selected="selected"</eq> >阿皮亚</option>
+                  <option value = '5' <eq name="ai.timezone" value="5">selected="selected"</eq> >夏威夷</option>
+                  <option value = '6' <eq name="ai.timezone" value="6">selected="selected"</eq> >阿拉斯加</option>
+                   <option value = '7' <eq name="ai.timezone" value="7">selected="selected"</eq> >旧金山</option>
+                   <option value = '8' <eq name="ai.timezone" value="8">selected="selected"</eq> >丹佛</option>
+                   <option value = '9' <eq name="ai.timezone" value="9">selected="selected"</eq> >墨西哥城</option>
+                   <option value = '10' <eq name="ai.timezone" value="10">selected="selected"</eq> >亚特兰大</option>
+                </select></td>
+              <td class=""></td>
+            </tr>
+            <tr class="hide"><!--隐藏表格，用来增加插件新功能-->
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="border_top"> <a class="btn btn-primary btn-small" onclick="formSubmit();">{$Think.lang.save_settings}</a> </p>
+        <div class="copyright"></div>
+</div>
+      <!--end Right Content-->  
+</form>
+
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+
+</body>
+</html>

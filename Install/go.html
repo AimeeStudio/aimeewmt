@@ -1,0 +1,480 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AIMEE安装_欢迎你使用AIMEE</title>
+<style>
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	overflow: auto;
+}
+body {
+	background: #000;
+}
+.en {
+	font-family: Arial, Helvetica, sans-serif;
+}
+div.conther {
+	width: 100%;
+	height: auto!important;/*for ie6 bug and ie7+,moz,webkit 正确*/
+	height: 100%;/*修复IE6,all browser*/
+	min-height: 100%;/*for ie6 bug and ie7+,moz,webkit 正确*/
+}
+div.logo {
+	width: 160px;
+	height: 205px;
+	display: block;
+	background: url(imges/img.png) no-repeat;
+	margin: auto;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	margin-left: -82px;
+	cursor: pointer;
+}
+div.txt {
+	width: 233px;
+	height: 87px;
+	display: block;
+	color: #FFF;
+	font-family: "微软雅黑";
+	margin: auto;
+	position: absolute;
+	top: -23px;
+	left: 50%;
+	margin-left: -132px;
+	cursor: pointer;
+	text-align: center;
+	display: none;
+	background: url(imges/donghua.gif);
+}
+.install_conther {
+	position: absolute;
+	bottom: 0px;
+	top: 52px;
+	width: 100%;
+	height: 0px;
+	text-align: center;
+	background: #ccc;
+	z-index: 1;
+	background: #FFF;
+}
+.con1 {
+	width: 247px;
+	height: 33px;
+	background: url(imges/img.png) -164px 3px;
+	margin: 100px auto 0 auto;
+	display: none;
+}
+.con2 {
+	width: 350px;
+	height: 33px;
+	background: url(imges/img.png) -166px -39px;
+	padding-top: 4px;
+	margin: 100px auto 0 auto;
+	text-align: left;
+	display: none;
+}
+.con3 {
+	margin-top: 30px;
+	display: none;
+}
+.con3_h1 {
+	width: 135px;
+	height: 33px;
+	background: url(imges/img.png) -160px -82px;
+	margin: 15px auto 20px auto;
+}
+.con3_h2 {
+	width: 350px;
+	margin: 5px auto 0 auto;
+}
+.agreement {
+	font-size: 12px;
+}
+.button {
+	width: 97px;
+	height: 31px;
+	background: #000 url(imges/img.png) 0px -214px;
+	border: none;
+	color: #fff;
+	margin: 26px 14px 0 0;
+	cursor: pointer;
+}
+.button:hover {
+	background-position: left bottom;
+}
+.c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10 {
+	display: none;
+}
+.con4 {
+	width: 850px;
+	min-height: 450px;
+	_height: 450px;
+	background: url(imges/detect_bg.jpg) no-repeat right top;
+	margin: 0 auto;
+	display: none;
+}
+.con4 h3, .con5 h3, .con6 h3, .con7 h3, .con9 h3 {
+	font-size: 30px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.con4_tab {
+	color: #a2a2a2;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+.con4_tab li {
+	list-style: none;
+	float: left;
+	width: 190px;
+	height: 34px;
+	line-height: 36px;
+	border: 1px solid #fff;
+	border-bottom-color: #ddd;
+	margin-bottom: -1px;
+}
+.con4_tab li.active {
+	border-color: #ddd #ddd #fff #ddd;
+	color: #000;
+}
+.con4_plan {
+	clear: both;
+	width: 670px;
+	padding: 30px 60px;
+	border: 1px solid #dddddd;
+}
+.con4_plan table {
+	font-size: 12px;
+	text-align: left;
+	color: #333;
+	margin-bottom: 30px;
+}
+.con4_plan table td, .con4_plan table th {
+	border-bottom: 1px solid #ddd;
+	height: 30px;
+	padding-left: 20px;
+}
+.con4_plan table th {
+	font-weight: normal;
+}
+.con4_plan table td {/*vertical-align:bottom;*/
+	vertical-align: middle;
+}
+.fail {
+	margin-left: -20px;
+	padding-right: 4px;
+}
+.con4_plan .green {
+	color: #008000;
+	margin-right: 3px;
+}
+.con4_plan .red {
+	color: #e4253e;
+	margin-right: 3px;
+}
+.con5, .con6 {
+	display: none;
+}
+.con5 p, .con9 p {
+	color: #585858;
+	font-size: 14px;
+}
+.step_msg {
+	border-top: 1px solid #e8e8e8;
+	width: 928px;
+	margin: 40px auto;
+	padding: 40px 0 0 0;
+	text-align: left;
+	position: relative;
+}
+.step_msg input {
+	width: 310px;
+	height: 27px;
+	line-height: 27px;
+	border: 1px solid;
+	border-color: #c0c0c0 #d9d9d9 #d9d9d9;
+	margin-bottom: 10px;
+	color: #3399cc;
+	text-indent: 92px;
+	font-size: 12px;
+	padding-right: 10px;
+}
+.step_msg div {
+	position: relative;
+	margin-left: 300px;
+}
+.step_msg div span {
+	color: #9f9f9f;
+	font-size: 12px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.step_msg .blue_line {
+	background: #3399cc;
+	width: 162px;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	top: -4px;
+	margin: 0 -81px;
+}
+.step_msg input.w190 {
+	width: 190px;
+}
+.step_msg input.w210 {
+	width: 210px;
+}
+.con7 {
+	display: none;
+}
+.con7 .step_msg {
+	border: 1px solid #e8e8e8;
+	font-size: 12px;
+	padding: 10px 20px;
+	height: 200px;
+	overflow-y: auto;
+	line-height: 1.5;
+	color: #585858;
+}
+.con8 {
+	width: 300px;
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	margin-left: -150px;
+	color: #fff;
+	text-align: center;
+	background: #000;
+	font-family: "微软雅黑";
+	display: none;
+}
+.con8 .logo_2 {
+	width: 159px;
+	height: 143px;
+	background: url(imges/img.png) no-repeat left top;
+	margin: 0 auto;
+}
+.con8 h3 {
+	font-size: 30px;
+	font-weight: normal;
+}
+.con8 p {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.8;
+}
+.reception, .backstage {
+	background-color: #0172c9;
+	background-image: none;
+}
+.reception {
+	background-color: #0172c9;
+	-moz-box-shadow: 0 0 10px #0172c9;
+	-webkit-box-shadow: 0 0 10px #0172c9;
+	box-shadow: 0 0 10px #0172c9;
+}
+.backstage {
+	background-color: #faa330;
+	-moz-box-shadow: 0 0 10px #faa330;
+	-webkit-box-shadow: 0 0 10px #faa330;
+	box-shadow: 0 0 10px #faa330;
+}
+.con9 {
+	display: none;
+}
+</style>
+<script type="text/javascript" src="../Statics/Admin/Js/jquery.js"> </script>
+<script type="text/javascript"> 
+$(document).ready(function() {$(".logo").click(function() {$(".install_conther").animate({height: "100%"},"slow");$(".logo").delay(50).fadeOut();$(".txt").delay(50).fadeIn();$(".con1").slideDown(1000);$(".con1").delay(2000).fadeOut();$(".con2").delay(3500).slideDown(500).delay(3000).fadeOut();$(".con3").delay(7800).slideDown()})});
+$(document).ready(function(){$("#agree").click(function(){$(".c2").delay(1050).fadeIn();$(".c3").delay(2050).fadeIn();$(".c4").delay(3050).fadeIn();$(".c5").delay(4050).fadeIn(function(){
+$("#con4_tab2").addClass("active"); $("#con4_tab1").removeClass("active"); $("#con4_plan1").fadeOut(0)
+$("#con4_plan2").fadeIn(500)});$(".c6").delay(5050).fadeIn();$(".c7").delay(6050).fadeIn();$(".c8").delay(7050).fadeIn();$(".c9").delay(8050).fadeIn(function(){
+$("#con4_tab3").addClass("active");$("#con4_tab2").removeClass("active"); $("#con4_plan2").fadeOut(0)
+ $("#con4_plan3").fadeIn(500)});$(".c10").delay(5050).fadeIn();});});
+</script>
+<script> 
+$(function() {
+var id_agreement = $("#agreement").get(0);$("#agree").click(function() {if (id_agreement.clientHeight + id_agreement.scrollTop < id_agreement.scrollHeight) { alert("请认真仔细完成阅读协议");} else { $(".con3").fadeOut();$(".con5").delay(500).slideDown(500);}});$("#a7").click(function() {$(".con4").fadeOut();$(".con5").delay(500).slideDown(500);});$("#a8").click(function() {$(".con5").fadeOut();$(".con6").delay(500).slideDown(500);});$("#a9").click(function() {$(".con6").fadeOut();$(".con7").delay(500).slideDown(500);});$("#a10").click(function() {$(".con7").fadeOut();$(".logo").hide();$(".install_conther").animate({ height: "0"},"slow");$(".txt").delay(50).fadeOut();$(".con8").slideDown(1000);});$("#a11").click(function() {$(".con7").fadeOut();$(".con9").delay(500).slideDown(500);$(".txt").delay(50).fadeOut();});})
+</script>
+</head>
+<body>
+<div class="conther">
+  <div class="txt"></div>
+  <div class="logo"></div>
+  <div class="install_conther">
+    <div class="con1"></div>
+    <div class="con2"><img src="imges/loding.gif" width="27" height="27"></div>
+    <div class="con3">
+      <div class="con3_h1"></div>
+      <textarea cols="100" rows="20" id="agreement" class="agreement">
+
+版权所有 (c) 2012-2013，艾米(以下简称Aimee)保留所有权利.
+
+感谢您选择 Aimee 产品,希望我们的努力能为您提供一个高效快速和强大的网站解决方案。
+ 
+Aimee 全称为 Aimee 网站管理系统。 
+
+Aimee网站管理系统的官方网站为 http://www.aimees.net，是 Aimee 产品的开发商。
+
+Aimee使用CanPHP框架作为基础内核，该框架受Apache 2.0 license保护。
+
+Aimee享有其在原框架基础上独立开发的源代码及独有功能的著作权，该著作权及源代码受 LGPL license保护。
+
+Aimee享有Aimee标志的著作权及使用权。
+
+使用者：无论个人或组织、盈利与否、用途如何（包括以学习和研究为目的），均需仔细阅读本协议(请后台查阅软件详细授权协议)，在理解、同意、并遵守本协议的全部条款后，方可开始使用 Aimee 软件。 
+
+本授权协议适用于 Aimee 当前版本及所有后续版本，Aimee拥有对本授权协议的最终解释权。 
+
+协议许可的权利 
+
+您可以在完全遵守本最终用户授权协议的基础上，将本软件应用于非商业用途，而不必支付软件版权授权费用。 
+
+您可以在协议规定的约束和限制范围内修改 Aimee 源代码(如果被提供的话)或界面风格以适应您的网站要求。
+ 
+您拥有使用本软件构建的网站中全部会员资料、文章及相关信息的所有权，并独立承担与文章内容的相关法律义务。 
+
+获得商业授权之后，您可以将本软件应用于商业用途，同时依据所购买的授权类型中确定的技术支持期限、技术支持方式和技术支持
+
+内容，自购买时刻起，在技术支持期限内拥有通过指定的方式获得指定范围内的技术支持服务。商业授权用户享有反映和提出意见
+
+的权力，相关意见将被作为首要考虑，但没有一定被采纳的承诺或保证。 
+
+协议规定的约束和限制 
+
+未获商业授权之前，不得将本软件受版权保护范围用于商业用途（包括但不限于企业网站、经营性网站、以营利为目或实现盈利的网
+
+站）。购买商业授权请登陆http://www.aimees.net参考相关说明。 
+
+不得对本软件或与之关联的商业授权进行出租、出售、抵押或发放子许可证。 
+
+无论如何，即无论用途如何、是否经过修改或美化、修改程度如何，只要使用 Aimee 的整体或任何部分，未经授权许可，系统管理
+
+后台脚处的 Aimee 名称和 http://www.aimees.net 的链接都必须保留，而不能清除或修改，除非您获得艾米官方授权许可。 
+
+在 Aimee 的整体或任何部分基础上以发展任何派生版本、修改版本或第三方版本用于重新分发需取得Aimee的授权以及必须向最终
+
+用户列出Aimee及canphp为原始版权方。
+ 
+如果您未能遵守本协议的条款，您的授权将被终止，所被许可的权利将被收回，并承担相应法律责任。 
+
+有限担保和免责声明 
+
+本软件及所附带的文件是作为不提供任何明确的或隐含的赔偿或担保的形式提供的。 
+
+用户出于自愿而使用本软件，您必须了解使用本软件的风险，在尚未购买产品技术服务之前，我们不承诺提供任何形式的技术支持、
+
+使用担保，也不承担任何因使用本软件而产生问题的相关责任。 
+
+
+艾米及艾米作者及其团队不对使用本软件构建的网站中的文章或信息承担责任。 
+
+有关 艾米  最终用户授权协议、商业授权与技术服务的详细内容，均由 艾米官方网站独家提供。艾米官方拥有在不事先通知的情况
+
+下，修改授权协议和服务价目表的权力，修改后的协议或价目表对自改变之日起的新授权用户生效。 
+
+电子文本形式的授权协议如同双方书面签署的协议一样，具有完全的和等同的法律效力。您一旦开始安装 Aimee，即被视为完全理解
+
+并接受本协议的各项条款，在享有上述条款授予的权力的同时，受到相关的约束和限制。协议许可范围以外的行为，将直接违反本
+
+授权协议并构成侵权，我们有权随时终止授权，责令停止损害，并保留追究相关责任的权力。
+
+</textarea>
+      <div class="con3_h2">
+        <input type="submit" value="同意" id="agree" name="agree" class="button">
+        <input class="button" name="" type="button" value="不同意" id="a6" onClick="javascript:window.location.href='http://www.aimees.net';" >
+      </div>
+    </div>
+    <div class="con4">
+      <h3>运行环境检测</h3>
+      <div class="con3_h2">
+        <input type="submit" value="返回" name="" class="button" ionclick="javascript:window.location.href='index.php';">
+        <input class="button" name="" type="button" value="前往安装" id="a7">
+      </div>
+    </div>
+    
+    
+    
+    
+    <form id="myform" action="index.php?step=2" method="post" name="form1">
+      <div class="con5">
+        <div>
+          <h3>安装第一步</h3>
+          <p>如果您不了解MYSQL，没关系！点击艾米安装教程获得MYSQL的有关信息 ：）</p>
+          <div class="step_msg">
+            <div>
+              <input name="dbHost" id="dbHost" type="text" value="127.0.0.1 " x-webkit-speech="x-webkit-speech">
+              <span>数据库地址</span></div>
+            <div>
+              <input class="w190" name="dbPort" id="dbPort" type="text" value="3306" x-webkit-speech="x-webkit-speech">
+              <span>数据库端口</span></div>
+              <div>
+              <input name="dbName" type="text" id="dbName" x-webkit-speech="x-webkit-speech">
+              <span>数据库名</span></div>
+            
+            <div>
+              <input name="dbUser" type="text" id="dbUser" x-webkit-speech="x-webkit-speech">
+              <span>数据库用户</span></div>
+            <div>
+              <input name="dbPwd" type="text" id="dbPwd" onblur="TestDbPwd()" x-webkit-speech="x-webkit-speech">
+              <span>数据库密码</span>
+              <div id="J_install_tip_dbpw"></div>
+            </div>
+          
+            <div>
+              <input class="w210" name="dbPrefix" id="dbPrefix" type="text" x-webkit-speech="x-webkit-speech" value="ai_">
+              <span>数据库前缀</span></div>
+            <div class="blue_line"></div>
+          </div>
+        </div>
+        <div class="con3_h2">
+          <input type="submit" value="取消" name="" class="button" onClick="javascript:window.location.href='no.html';">
+          <input class="button" name="dosubmit" type="submit" id="dosubmit" value="完成安装">
+        </div>
+      </div>
+    </form>
+    
+    
+    
+    
+    
+    <div class="con7">
+      <div>
+        <h3>正在安装中</h3>
+        <p>请稍候</p>
+        <div class="step_msg">myspl>>admin>>...<br>
+          myspl>>admin>>...
+          <ul id="loginner">
+          </ul>
+          <div class="blue_line"></div>
+        </div>
+        <div class="bottom tac"> <a href="javascript:;" class="btn_old"><img src="./images/loading.gif" align="absmiddle">&nbsp;正在安装...</a> </div>
+        <a href="#" id="a10">安装成功页面</a><a href="#" id="a11">安装失败页面</a></div>
+    </div>
+    <div class="con9">
+      <h3>安装失败 ：（</h3>
+      <p>请返回检查您的配置和填写信息</p>
+      <div class="con3_h2">
+        <input type="submit" value="返 回" name="" class="button">
+      </div>
+    </div>
+  </div>
+  <div class="con8">
+    <div class="logo_2"></div>
+    <h3>安装成功 : )</h3>
+    <p>欢迎你使用Aimee WTM</p>
+    <p>在这里你会发掘很多不知人为的秘密</p>
+    <div class="con8_h2">
+      <input type="submit" value="前往前台" name="" class="button reception">
+      <input type="button" value="前往后台" name="" class="button backstage">
+    </div>
+  </div>
+</div>
+</body>
+</html>

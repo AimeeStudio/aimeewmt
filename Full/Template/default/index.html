@@ -1,0 +1,107 @@
+<include file="./Template/default/header.html" />
+<!--也可以 <include file="Template:default:header" />-->
+
+<body>
+<div class="wrapper">
+  <div class="content"> 
+    <!--头部开始-->
+    <div class="header">
+      <h1><a href="#"><img src="[!SKIN]/default/images/logo.jpg" alt="logo" /></a></h1>
+      <!--头部导航-->
+      <ul class="maniNav">
+        <li><a href="[!ROOT]">首页</a></li>
+        <menu id="rs" lim="10" >
+          <li><a href="{$rs.url}">{$rs.title} </a></li>
+        </menu>
+        <li><a href="#">时间：<?php echo date("Y-m-d H:i:s"); ?></a></li>
+      </ul>
+      <!--头部导航结束--> 
+      <span class="header-msg">测试专用模板</span> </div>
+    <!--头部结束--> 
+    <!--中间开始-->
+    <div class="aimee-box">
+      <ul class="img-list">
+        <li> <a href="#"><img src="__PUBLIC__/default/images/img001.jpg" alt="" /></a>
+          <p><a href="#">图片名称</a></p>
+        </li>
+        <li> <a href="#"><img src="__PUBLIC__/default/images/img002.jpg" alt="" /></a>
+          <p><a href="#">图片名称</a></p>
+        </li>
+        <li> <a href="#"><img src="__PUBLIC__/default/images/img003.jpg" alt="" /></a>
+          <p><a href="#">图片名称</a></p>
+        </li>
+        <li> <a href="#"><img src="__PUBLIC__/default/images/img004.jpg" alt="" /></a>
+          <p><a href="#">图片名称</a></p>
+        </li>
+      </ul>
+    </div>
+    <!--end aimee-box-->
+    <div class="aimee-box cFloat">
+      <div class="row2 border-right fl"> 
+        <!--文章列表开始-->
+        <div class="text-list">
+          <h3>分类标题</h3>
+          <ul>
+            <li><a href="#">文章标题</a><span class="time">2013年1月1日</span></li>
+            <li><a href="#">文章标题</a><span class="time">2013年1月1日</span></li>
+            <li><a href="#">文章标题</a><span class="time">2013年1月1日</span></li>
+            <li><a href="#">文章标题</a><span class="time">2013年1月1日</span></li>
+            <li><a href="#">文章标题</a><span class="time">2013年1月1日</span></li>
+          </ul>
+        </div>
+        <!--文章列表结束--> 
+      </div>
+      <div class="row2 border-left fl">
+        <div class="text-field">
+          <p>调用网站名称：{$ai.sitename}</p>
+          <p>调用关键字：{$ai.keywords}</p>
+          <p>调用网站描述：{$ai.description}</p>
+          <p>调用版权：{$ai.siteright}</p>
+          <p>调用ICP：{$ai.icp}</p>
+          <p>调用管理员邮箱：{$ai.mail}</p>
+          <p>调用网站网址：{$ai.domain}</p>
+        </div>
+      </div>
+    </div>
+    <!--end aimee-box-->
+    <div class="aimee-box">
+      <ul class="photo-text">
+        <li>
+          <div class="lc fl"><a href="#"><img src="__PUBLIC__/default/images/img001.jpg" alt="" /></a></div>
+          <div class="rc fr">
+            <h3><a href="#">内容标题</a></h3>
+            <p>简介：简介简介简介简介简介简介简介简介简介简介<a href="#">详情&gt;&gt;</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="lc fl"><a href="#"><img src="__PUBLIC__/default/images/img001.jpg" alt="" /></a></div>
+          <div class="rc fr">
+            <h3><a href="#">内容标题</a></h3>
+            <p>简介：简介简介简介简介简介简介简介简介简介简介<a href="#">详情&gt;&gt;</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--end aimee-box--> 
+    <!--中间结束--> 
+    <!--底部开始-->
+    <div class="footer">
+      <div class="aimee-box">
+        <tag fid="18" lim="3"> <a href="{$rs.url}" target="_blank">{$rs.title}</a> </br>
+        </tag>
+        <p>内部调试</p>
+        <menu id="yanglei" att="2" lim="10" ord="1">
+          <li> <a href="{$yanglei.url}" target="_blank"> {$yanglei.id}  {$yanglei.title}   关键字：{$yanglei.keywords} </a> <img src="{$yanglei.img}"> </li>
+          <nav id="crs" extid="yanglei" lim="10" ord="1">
+            <li> <a href="{$crs.url}" target="_blank"> {$crs.id}{$crs.title}关键字：{$crs.keywords} </a> <img src="{$crs.img}"> </li>
+          </nav>
+        </menu>
+      </div>
+    </div>
+    <!--底部开始--> 
+    <include file="./Template/default/foother.html" /> 
+    <!--底部结束--> 
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jshack.js"></script>
+<link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>Aimee</title>
+</head>
+<body>
+      
+        <div class="page-header">
+          <h3 class="fl">{$Think.lang.web_info}</h3>
+          <div class="user_message fr"><i class="icon-user"></i>{$Think.lang.web_group}：<if condition="($Think.session.adminpower eq 1)">{$Think.lang.administrator}<else />{$Think.lang.user}</if><i class="icon-time"></i>{$Think.lang.login_time} <empty name="Think.session.lastlogintime">首次登陆<else />{$Think.session.lastlogintime|date="Y-m-d",###}</empty></div>
+          <div class="cl"></div>
+        </div>
+        <div class="hero-unit home_prompt">
+          <h1>欢迎使用 Aimee ！</h1>
+          <p>这是您第一次与Aimee接触，Aimee设计初衷就是为了让设计师、程序员、以及不懂网站的初学者能够轻松建立网站。</p>
+          <p>Aimee还有许多您不知道的小秘密，希望我们在以后的日子里相处愉快。</p>
+          <p>&nbsp;</p>
+          <p> <a class="btn btn-primary btn-large"> 前往学习中心 </a> </p>
+        </div>
+        
+        <!--end 首页提示信息-->
+        <div class="copyright"></div>
+
+      <!--end Right Content-->   
+      
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script> 
+</body>
+</html>

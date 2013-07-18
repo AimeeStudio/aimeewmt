@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jshack.js"></script>
+
+<link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+<style type="text/css">
+body,td,th {
+	font-family: Arial, SimSun, "Helvetica Neue", Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<body>
+      <div class="content">
+        <div class="page-header">
+          <h3 class="fl">新增模版</h3>
+          <div class="user_message fr"><i class="icon-file"></i><a href="{:U('Setting/template_manage')}">返回模版列表</a></div>
+          <div class="cl"></div>
+        </div>
+        <table class="table set_table">
+          <thead>
+            <tr>
+              <th width="11%" >名称</th>
+              <th >编 辑</th>
+            </tr>
+          </thead>
+          <tbody>
+         <tr>
+              <td>模版命名</td>
+           <td ><input name="" type="text" class="span4" value="" /> 
+             &nbsp;必须英文字母</td>
+            </tr>
+            <tr>
+              <td>模版代码</td>
+              <td>
+              
+              
+              
+              
+              <textarea cols="" rows="8" class="input-xlarge span8">
+              
+
+              模版代码内容
+              
+              
+              </textarea>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="border_top"> <a class="btn btn-primary btn-small">增加新模版</a> </p>
+        <div class="copyright"></div></div>
+
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

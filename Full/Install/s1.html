@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>安装</title>
+</head>
+
+<body>
+<div>
+    <form id="myform" action="index.php?step=2" method="post" name="form1">
+        <table   border="0" align="center" cellpadding="0" cellspacing="0" class="table">
+
+            <tr>
+                <td width="170"><strong>数据库主机：</strong></td>
+                <td width="410"><input name="dbHost" type="text" id="dbHost" value="127.0.0.1" size="30" />
+                    <small>(一般为127.0.0.1)</small></td>
+            </tr>
+            <tr>
+                <td><strong>数据库端口：</strong></td>
+                <td><input name="dbPort" type="text" id="dbPort" value="3306" size="10" /></td>
+            </tr>
+            <tr>
+                <td><strong>数据库名称：</strong></td>
+                <td>
+                    <input name="dbName" type="text" id="dbName" value="aimee" size="20" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>数据库用户：</strong></td>
+                <td><input name="dbUser" type="text" id="dbUser" value="root" size="20" /></td>
+            </tr>
+            <tr>
+                <td><strong>数据库密码：</strong></td>
+                <td>
+                    <input name="dbPwd" type="text" id="dbPwd" size="20" />
+                    </td>
+            </tr>
+            <tr>
+                <td><strong>数据表前缀：</strong></td>
+                <td><input name="dbPrefix" type="text" id="dbPrefix" value="ai_" size="20" />
+                    </td>
+            </tr>
+        </table>
+
+        <div>
+            <input name="dosubmit" type="submit" id="dosubmit" value=" 提交 " />
+        </div>
+    </form>
+</div>
+<!--end aimee_login--> 
+
+</body>
+</html>

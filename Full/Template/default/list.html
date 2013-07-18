@@ -1,0 +1,52 @@
+<include file="./Template/default/header.html" />
+
+<body>
+<div class="wrapper">
+	<div class="content">
+    	<!--头部开始-->
+        <div class="header">
+        	<h1><a href="#"><img src="__PUBLIC__/default/images/logo.jpg" alt="logo" /></a></h1>
+            <!--头部导航-->
+            <ul class="maniNav">
+                <li><a href="[!ROOT]">首页</a></li>
+         <menu id="rs" lim="10" >
+         <eq name="rs.id" value="2">
+		<li><a href="{$rs.url}">{$rs.title}  </a></li>
+        </eq>
+         </menu> 
+ <li><a href="#">时间：<?php echo date("Y-m-d H:i:s"); ?></a></li>
+                
+            </ul>
+            <!--头部导航结束-->
+            <span class="header-msg">测试专用模板</span>
+        </div>
+        <!--头部结束-->
+        <!--中间开始-->
+        <div class="aimee-box cFloat">
+            <!--文章列表开始-->
+            <div class="text-list">
+               	<h3>分类标题</h3>
+                <ul>
+            <list id="rs" fid="$fid" lim="10" page="$page" pagetype="4" ord="3">
+                <li>
+                 <a href="{$rs.url}">{$rs.id}.{$rs.title}</a>
+                <span class="time">{$rs.time|date="Y年m月d日",###}</span>
+                </li>
+            </list> 
+                </ul>
+            </div>
+            <!--文章列表结束--> 
+            <!--页码开始--> 
+            <div class="pages">
+            {$page}
+            </div>
+            <!--页码结束-->    
+        </div><!--end aimee-box-->
+        <!--中间结束-->
+        <!--底部开始-->
+<include file="./Template/default/foother.html" />
+        <!--底部结束-->
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$Think.lang.welcome}</title>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jshack.js"></script>
+
+<link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+<style type="text/css">
+body,td,th {
+	font-family: Arial, SimSun, "Helvetica Neue", Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<body>  
+      <div class="content">
+<div class="page-header">
+          <h3 class="fl">增加表单</h3>
+          <div class="user_message fr"><i class="icon-wrench"></i>配置您的网站性能</div>
+          <div class="cl"></div>
+        </div>
+        <form class="form-inline">
+        <table class="table set_table">
+          <thead>
+            <tr>
+              <th width="11%" >功 能</th>
+              <th >配 置</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>表单名</td>
+              <td>
+              	<input class="span3" name="" type="text" />
+              </td>
+              <td>&nbsp;</td>
+            </tr>          
+          </tbody>
+        </table>
+</form>
+        <p class="border_top"> <a class="btn add_Custom">增加自定义项</a> </p>
+        <p class="border_top"> <a class="btn btn-primary btn-small">保存设置</a> </p>
+        <div class="copyright"></div></div>
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+	$(document).ready(function(){
+   
+    var option = $(".set_table tr");
+    function list_again(){
+            option.each(function(){
+                var i = $(this).index();
+            })
+        }
+    $(".add_Custom").click(function(){
+        $(".set_table").append('<tr>'
+								+'<td colspan="3" class="td-table"><table class="table table-bordered"><tbody>'
+								+'<tr><td rowspan="3" width="160"><input class="span2" name="" type="text" value="表单名称" /></td><td width="120">参数</td><td><input class="span3" name="" type="text" /></td><td rowspan="3" width="10%"><input class="btn btn-info" name="" type="button" value="删除" /></td></tr>'
+								+'<tr><td>Name命名</td><td><input class="span3" name="" type="text" /></td></tr>'
+								+'<tr><td>表单形式</td><td><select name=""><option>文本</option><option>整数</option><option>单选</option><option>多选</option></select></td></tr>'
+								+'</tbody></table></td></tr>');
+        option = $(".set_table tr");
+        list_again();
+        })
+    $(".btn-info").live("click",function(){
+        var td = $(this).parent();
+		var tr = td.parent();
+		var tbody = tr.parent();
+		var table = tbody.parent();
+		var td2 = table.parent();
+		td2.parent().remove();
+        list_again();
+        })
+    })
+</script>
+
+</body>
+</html>

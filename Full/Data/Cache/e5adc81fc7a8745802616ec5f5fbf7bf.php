@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿Powered By <a href="http://www.aimees.net">Aimee</a> 0.0.1.A &copy; 2013 AimeeStudio Inc.  <script src="http://s6.cnzz.com/stat.php?id=4695281&web_id=4695281" language="JavaScript"></script> <span style="float:right"><a href="#"><?php echo (L("licenses")); ?></a> | <a href="#"><?php echo (L("eula")); ?></a> | <a href="#">未授权</a></span>

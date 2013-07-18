@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jshack.js"></script>
+
+
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.simpletip-1.3.1.js"></script>
+
+<link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title>{$Think.lang.welcome}</title>
+<style type="text/css">
+body,td,th {
+	font-family: Arial, SimSun, "Helvetica Neue", Helvetica, sans-serif;
+}
+</style>
+<!--全选反选JS-->
+<script>
+function CheckAll(value,obj)  {
+var form=document.getElementsByTagName("form")
+ for(var i=0;i<form.length;i++){
+    for (var j=0;j<form[i].elements.length;j++){
+    if(form[i].elements[j].type=="checkbox"){ 
+    var e = form[i].elements[j]; 
+    if (value=="selectAll"){e.checked=obj.checked}     
+    else{e.checked=!e.checked;} 
+       }
+    }
+ }
+}
+</script>
+</head>
+
+<body>
+      <div class="content">
+        <div class="page-header">
+          <h3 class="fl">模板修改</h3>
+          <div class="user_message fr"><i class="icon-file"></i><a href="{:U('Setting/template_add')}">增加新模版</a></div>
+          <div class="cl"></div>
+        </div>
+        <div class="minbox">
+         <form name="form1" method="post" action="">
+        	<table class="table table-bordered table-striped">
+            	<thead>
+                	<tr>
+                    	<th width="5%" class="table-textcenter">
+                       选择
+                      </th>
+                        <th colspan="5" >模板名称</th>
+                        <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+            		<tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td colspan="5"><i class="icon-file"></i>header.html</td>
+                        <td class="table_config"><a href="template_set.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                    <tr>
+                		<td align="center" class="table-textcenter"><input name="" type="checkbox" value=""></td>
+                        <td colspan="5"><i class="icon-file"></i>footer.html</td>
+                        <td class="table_config"><a href="template_set.html">编辑</a><a href="#">删除</a></td>
+                	</tr>
+                     
+                </tbody>
+            </table>
+                        </form>
+            <div class="batch_edit">
+            <span><input name="" type="checkbox" value="" onclick=CheckAll('selectAll',this)></span>
+            <select class="input-small" name="">
+                <option>批量删除</option>
+            </select>
+            </div>
+               <div class="pagination-i">
+                {$page}
+            </div>
+        </div>
+        <div class="copyright"></div></div>
+
+
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

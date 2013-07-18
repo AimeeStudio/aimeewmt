@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$Think.lang.welcome}</title>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/bootstrap.js"></script>
+<link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+      <div class="content">
+        <div class="page-header">
+          <h3 class="fl">分类参数</h3>
+          <div class="user_message fr"><a href="{:U('Class/class_parameters')}"><i class="icon-cog"></i>返回分类参数</a></div>
+          <div class="cl"></div>
+        </div>
+        <form class="form-inline" name="form1" action="{:U('Class/class_par_set')}" method="post">
+        <input type="hidden" name="id" value="{$classnr.id}" />
+       <table class="table set_table">
+          <thead>
+            <tr>
+              <th width="11%" >功 能</th>
+              <th >配 置</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>所属栏目</td>
+              <td>
+              <select class="span3" name="cl_par_attid" >
+              <volist name="suoshu" id="ss">
+                <option value="{$ss.id}" <eq name="ss.id" value="$classnr.id">selected="selected"</eq> >{$ss.cl_name}</option>
+              </volist>
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <td>字段名称</td>
+              <td><input class="span5" name="cl_par_name" type="text" value="{$classnr.cl_par_name}" /></td>
+            </tr>
+            <tr>
+              <td>字段标签</td>
+              <td><input class="span5" name="cl_par_key" type="text" value="{$classnr.cl_par_key}" /></td>
+            </tr>
+            <tr>
+            	<td>字段类型</td>
+                <td><select name="cl_par_type">
+                  <option value="1" <eq name="classnr.cl_par_type" value="1">selected="selected"</eq> >文本</option>
+                  <option value="2" <eq name="classnr.cl_par_type" value="2">selected="selected"</eq> >html</option>
+                  <option value="3" <eq name="classnr.cl_par_type" value="3">selected="selected"</eq> >单选</option>
+                  <option value="4" <eq name="classnr.cl_par_type" value="4">selected="selected"</eq> >多选</option>
+                  <option value="5" <eq name="classnr.cl_par_type" value="5">selected="selected"</eq> >货币</option>
+                  <option value="6" <eq name="classnr.cl_par_type" value="6">selected="selected"</eq> >下拉菜单</option>
+                  <option value="7" <eq name="classnr.cl_par_type" value="7">selected="selected"</eq> >倒计时</option>
+                  <option value="8" <eq name="classnr.cl_par_type" value="8">selected="selected"</eq> >开关</option>
+                  <option value="9" <eq name="classnr.cl_par_type" value="9">selected="selected"</eq> >图片上传</option>
+                  <option value="10" <eq name="classnr.cl_par_type" value="10">selected="selected"</eq> >附件</option>       
+                </select></td>
+            </tr> 
+            <tr>
+              <td>字段配置</td>
+              <td>
+              <textarea class="input-xlarge span5" name="cl_par_cnf" cols="20" rows="8">{$classnr.cl_par_cnf}</textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </form>
+        <p class="border_top"> <a class="btn btn-primary btn-small" onClick="formSubmit();">编辑分类</a> </p>
+        <div class="copyright"></div>
+      </div>
+      <!--end Right Content-->  
+      
+<script type="text/javascript">
+function formSubmit() {
+	//alert(document.form1.action);
+	document.form1.submit();
+}
+
+</script>
+<script type="text/javascript">
+    $(".copyright").load("{:U('Index/copyright')}");
+</script>
+</body>
+</html>

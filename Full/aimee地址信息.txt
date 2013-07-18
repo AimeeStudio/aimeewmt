@@ -1,0 +1,23 @@
+地址:https://aimees.googlecode.com/svn/trunk/
+
+aimee svn提交后需要名和密码：
+aimeesvn@gmail.com
+qP2kw4sQ8up9
+
+
+测试用网址
+http://demo.aimees.net
+
+临时数据库地址
+http://demo.aimees.net/phpmyadmin
+用户名密码：
+root
+123456
+
+
+FTP地址
+202.82.170.30
+用户名密码
+aimee
+aimee2012
+FTP 端口 21

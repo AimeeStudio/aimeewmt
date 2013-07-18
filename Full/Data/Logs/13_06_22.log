@@ -1,0 +1,130 @@
+[ 2013-06-22T13:02:41+08:00 ] 127.0.0.1 /aimee/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001009s ]
+INFO: Run CheckLang Behavior [ RunTime:-0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.003193s ]
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.000575s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.020781s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001335s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cmenu D:\wamp\www\aimee\Source\ThinkPHP\Lib\Template\TagLib.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ai_channel` [ RunTime:0.005083s ]
+SQL: SHOW COLUMNS FROM `ai_channel` [ RunTime:0.003222s ]
+SQL: SELECT * FROM `ai_channel` WHERE ( `cl_class` = '0' ) ORDER BY cl_sort asc,id desc  [ RunTime:0.000544s ]
+SQL: SELECT `cl_keyword` FROM `ai_channel` WHERE id='18' LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `ai_channel` WHERE ( `cl_class` = '0' ) ORDER BY cl_sort asc,id desc  [ RunTime:0.000495s ]
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='26' ORDER BY cl_sort asc,id desc  [ RunTime:0.000630s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\aimee\Source\Lib\Model\ChannelModel.class.php 第 82 行.
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='18' ORDER BY cl_sort asc,id desc  [ RunTime:0.000460s ]
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='16' ORDER BY cl_sort asc,id desc  [ RunTime:0.000421s ]
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='27' ORDER BY cl_sort asc,id desc  [ RunTime:0.000378s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\aimee\Source\Lib\Model\ChannelModel.class.php 第 82 行.
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='24' ORDER BY cl_sort asc,id desc  [ RunTime:0.000469s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\aimee\Source\Lib\Model\ChannelModel.class.php 第 82 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.022275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043762s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.066213s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.067482s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.068430s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.069050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004121s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.070520s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2013-06-22T13:04:12+08:00 ] ERR: (ThinkException) 模板不存在[./Template/default/0.html]
+[ 2013-06-22T13:41:48+08:00 ] ERR: (ThinkException) 模板不存在[./Template/default/0.html]
+[ 2013-06-22T13:45:53+08:00 ] ERR: 文件名testsete：aaaaaaaaa
+[ 2013-06-22T13:45:53+08:00 ] ERR: (ThinkException) 模板不存在[./Template/default/0.html]
+[ 2013-06-22T15:12:34+08:00 ] ERR: 文件名testsete：aaaaaaaaa
+[ 2013-06-22T15:12:34+08:00 ] ERR: (ThinkException) 模板不存在[./Template/default/0.html]
+[ 2013-06-22T15:20:10+08:00 ] ERR: 文件名testsete：22222222
+[ 2013-06-22T15:20:10+08:00 ] ERR: (ThinkException) 模板不存在[./Template/default/0.html]
+[ 2013-06-22T15:29:00+08:00 ] ERR: 文件名$path：Array
+[ 2013-06-22T15:29:00+08:00 ] ERR: 文件名$action：0
+[ 2013-06-22T15:29:00+08:00 ] ERR: 文件名$module：default
+[ 2013-06-22T15:29:00+08:00 ] ERR: (ThinkException) 模板不存在[./Template/default/0.html]
+[ 2013-06-22T15:29:58+08:00 ] ERR: 文件名testsete：
+[ 2013-06-22T15:29:58+08:00 ] ERR: 文件名$path：Array
+[ 2013-06-22T15:29:58+08:00 ] ERR: 文件名$action：index
+[ 2013-06-22T15:29:58+08:00 ] ERR: 文件名$module：default
+[ 2013-06-22T15:29:59+08:00 ] 127.0.0.1 /aimee/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000832s ]
+INFO: Run CheckLang Behavior [ RunTime:-0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002701s ]
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.002594s ]
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.000418s ]
+NOTIC: [8] Undefined variable: tplName D:\wamp\www\aimee\Source\Lib\Action\IndexAction.class.php 第 14 行.
+INFO: [ view_template ] --START--
+NOTIC: [8] Array to string conversion D:\wamp\www\aimee\Source\ThinkPHP\Lib\Behavior\LocationTemplateBehavior.class.php 第 43 行.
+INFO: Run LocationTemplate Behavior [ RunTime:-0.016766s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002239s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cmenu D:\wamp\www\aimee\Source\ThinkPHP\Lib\Template\TagLib.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ai_channel` [ RunTime:0.003441s ]
+SQL: SHOW COLUMNS FROM `ai_channel` [ RunTime:0.002819s ]
+SQL: SELECT * FROM `ai_channel` WHERE ( `cl_class` = '0' ) ORDER BY cl_sort asc,id desc  [ RunTime:0.000493s ]
+SQL: SELECT `cl_keyword` FROM `ai_channel` WHERE id='18' LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT * FROM `ai_channel` WHERE ( `cl_class` = '0' ) ORDER BY cl_sort asc,id desc  [ RunTime:0.000386s ]
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='26' ORDER BY cl_sort asc,id desc  [ RunTime:0.000342s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\aimee\Source\Lib\Model\ChannelModel.class.php 第 82 行.
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='18' ORDER BY cl_sort asc,id desc  [ RunTime:0.000343s ]
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='16' ORDER BY cl_sort asc,id desc  [ RunTime:0.000329s ]
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='27' ORDER BY cl_sort asc,id desc  [ RunTime:0.000288s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\aimee\Source\Lib\Model\ChannelModel.class.php 第 82 行.
+SQL: SELECT * FROM `ai_channel` WHERE cl_class='24' ORDER BY cl_sort asc,id desc  [ RunTime:0.000394s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\aimee\Source\Lib\Model\ChannelModel.class.php 第 82 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.019164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.257846s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.277144s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.282244s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.283742s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.284814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009219s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.286580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2013-06-22T15:29:59+08:00 ] ERR: (ThinkException) 无法加载模块:Upload
+[ 2013-06-22T15:30:03+08:00 ] ERR: 文件名$path：Array
+[ 2013-06-22T15:30:03+08:00 ] ERR: 文件名$action：content
+[ 2013-06-22T15:30:03+08:00 ] ERR: 文件名$module：default
+[ 2013-06-22T15:30:03+08:00 ] 127.0.0.1 /aimee/index.php?m=Index&a=actionClass&actype=channel&fid=25
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001012s ]
+INFO: Run CheckLang Behavior [ RunTime:-0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002885s ]
+SQL: SHOW COLUMNS FROM `ai_setting` [ RunTime:0.002806s ]
+SQL: SELECT `item_key`,`item_value` FROM `ai_setting` WHERE ( `item` = '0' )  [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `ai_channel` [ RunTime:0.002903s ]
+SQL: SELECT `cl_tplclass` FROM `ai_channel` WHERE ( `id` = 25 ) LIMIT 1   [ RunTime:0.000267s ]
+INFO: [ view_template ] --START--
+NOTIC: [8] Array to string conversion D:\wamp\www\aimee\Source\ThinkPHP\Lib\Behavior\LocationTemplateBehavior.class.php 第 43 行.
+INFO: Run LocationTemplate Behavior [ RunTime:-0.021837s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002442s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ai_channel` [ RunTime:0.003321s ]
+SQL: SELECT * FROM `ai_channel` WHERE ( `cl_class` = '0' ) ORDER BY cl_sort asc,id desc  [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `ai_content` [ RunTime:0.059932s ]
+NOTIC: [8] Undefined variable: cid D:\wamp\www\aimee\Data\Cache\92d1ec753217b9fd31829384987f32d4.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\aimee\Data\Cache\92d1ec753217b9fd31829384987f32d4.php 第 34 行.
+NOTIC: [8] Undefined index: aut D:\wamp\www\aimee\Data\Cache\92d1ec753217b9fd31829384987f32d4.php 第 35 行.
+NOTIC: [8] Undefined index: time D:\wamp\www\aimee\Data\Cache\92d1ec753217b9fd31829384987f32d4.php 第 35 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\aimee\Data\Cache\92d1ec753217b9fd31829384987f32d4.php 第 36 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.024420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163431s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.187996s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.189018s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.189956s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.190642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003963s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.192213s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001285s ]
+

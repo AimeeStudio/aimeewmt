@@ -1,0 +1,41 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jshack.js"></script>
+<link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/style.css" rel="stylesheet" type="text/css" />
+<title><?php echo (L("welcome")); ?></title>
+</head>
+
+<body>
+        <div class="page-header">
+          <h3 class="fl">内容过滤</h3>
+          <div class="user_message fr"><i class="icon-wrench"></i>管理你的数据替换</div>
+          <div class="cl"></div>
+        </div>
+        <table class="table set_table">
+          <thead>
+            <tr>
+              <th colspan="2" >设置要过滤的内容字符，请每一个关键字和关键词为一行</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="100" valign="middle">过滤词汇</td>
+              <td><textarea cols="" rows="8" class="span5">你妈的
+你大爷的
+毛泽东
+推出共产党</textarea></td>
+            </tr>
+          </tbody>
+        </table>
+<p class="border_top"> <a class="btn btn-primary btn-small input-small">更&nbsp;新</a> </p>
+        <div class="copyright"></div>
+<script type="text/javascript">
+    $(".copyright").load("<?php echo U('Index/copyright');?>");
+</script>
+</body>
+</html>

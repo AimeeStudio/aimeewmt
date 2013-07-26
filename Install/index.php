@@ -98,8 +98,8 @@ function sql_execute($sql, $tablepre) {
 
 function sql_split($sql, $tablepre) {
 
-    if ($tablepre != "think_")
-        $sql = str_replace("think_", $tablepre, $sql);
+    if ($tablepre != "ai_")
+        $sql = str_replace("ai_", $tablepre, $sql);
     $sql = preg_replace("/TYPE=(InnoDB|MyISAM|MEMORY)( DEFAULT CHARSET=[^; ]+)?/", "ENGINE=\\1 DEFAULT CHARSET=utf8", $sql);
 
     $sql = str_replace("\r", "\n", $sql);

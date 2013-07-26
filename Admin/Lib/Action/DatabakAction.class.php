@@ -88,7 +88,7 @@ class DatabakAction extends CommonAction
     }
     public function getsize($tb)
     {
-        $data_dir = 'backup/';
+        $data_dir = '../Backup/';
         if (!preg_match('/_part/', $tb)) {
             $a = filesize($data_dir . $tb);
             return byte_format($a);
